@@ -7,6 +7,72 @@ import type { Tool } from "@/types";
 
 export const tools: Tool[] = [
   {
+    id: "11",
+    slug: "orcamento",
+    name: "Gerador de Orçamento",
+    description:
+      "Calcule APF (Análise de Pontos por Função) e gere um orçamento profissional em PDF. Preview no browser, download direto.",
+    longDescription: `**Gerador de Orçamento** combina calculadora APF e gerador de PDF num único fluxo — preencha, visualize e baixe sem sair do browser.
+
+**Como funciona:**
+1. Preencha as informações básicas (título, consultor, rodapé)
+2. Faça upload de até 2 logos (header circular + rodapé horizontal)
+3. Monte o escopo do projeto item por item
+4. Adicione as funções APF — tipo e complexidade preenchem os pontos automaticamente (tabela IFPUG)
+5. Configure as categorias de valor, NF% e BV%
+6. Clique em "Gerar Preview" → PDF aparece ao lado
+7. Baixe com um clique
+
+**APF suportado:**
+- Tipos: ALI, AIE, EE, SE, CE
+- Complexidades: Baixa, Média, Alta
+- Pontos auto-preenchidos pela tabela IFPUG padrão (editável)
+
+**Composição de valores:**
+- Subtotal (R$/hora × pontos)
+- Emissão de NF (% configurável, padrão 5%)
+- BV (% configurável, padrão 20%, aplicado sobre subtotal + NF)
+
+**Privacidade:** tudo no browser — nenhum dado é enviado a servidor.`,
+    tags: ["produtividade", "dados"],
+    status: "active",
+    visibility: "public",
+    hostingMode: "embedded",
+    href: "/tools/orcamento/usar",
+    githubUrl: "https://github.com/CaioJohnston/uteis",
+    featured: false,
+    createdAt: "2026-05-26",
+    i18n: {
+      en: {
+        name: "Budget Generator",
+        description:
+          "Calculate FPA (Function Point Analysis) and generate a professional PDF quote. In-browser preview, direct download.",
+        longDescription: `**Budget Generator** combines FPA calculator and PDF generator in a single flow — fill, preview, and download without leaving the browser.
+
+**How it works:**
+1. Fill in basic info (title, consultant name, footer text)
+2. Upload up to 2 logos (circular header + horizontal footer)
+3. Build the project scope item by item
+4. Add FPA functions — type and complexity auto-fill the points (IFPUG table)
+5. Configure value categories, NF% and BV%
+6. Click "Generate Preview" → PDF appears on the right
+7. Download with one click
+
+**FPA supported:**
+- Types: ILF, EIF, EI, EO, EQ (Brazilian notation: ALI, AIE, EE, SE, CE)
+- Complexities: Low, Medium, High
+- Points auto-filled from the standard IFPUG table (editable)
+
+**Value composition:**
+- Subtotal (R$/hour × points)
+- Tax invoice fee (configurable %, default 5%)
+- Agency commission (configurable %, default 20%, applied on subtotal + NF)
+
+**Privacy:** everything runs in the browser — no data is sent to any server.`,
+      },
+    },
+  },
+  {
     id: "10",
     slug: "mcpaint",
     name: "MC Paint",
